@@ -95,41 +95,41 @@ local mobs = {
   -- Timeless Isle (map 951)
   -- Many of the spawn timers are guesses, will need to refine when data is available
   -- [73174] = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["73174"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0,    coordsY = 0,    lastRequest = 0 }, -- Archiereus of Flame
-[153205]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153205"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[154701]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154701"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151684]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151684"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152007]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152007"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151933]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151933"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151124]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151124"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151672]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151672"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[153000]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153000"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151627]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151627"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151702]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151702"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[150575]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150575"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152182]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152182"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[150937]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150937"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[153226]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153226"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152113]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152113"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[154225]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154225"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151623]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151623"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151625]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151625"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151940]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151940"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[150342]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150342"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151308]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151308"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[155583]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["155583"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151934]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151934"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[150394]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150394"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[153200]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153200"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152001]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152001"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[154739]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154739"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[149847]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["149847"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[152570]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152570"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[154153]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154153"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151202]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151202"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[151884]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151884"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour       
-[153228]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153228"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Zhu-Gon the Sour   
+[153205]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153205"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153205, questID = 55855}, -- Zhu-Gon the Sour       
+[154701]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154701"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154701, questID = 56367}, -- Zhu-Gon the Sour       
+[151684]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151684"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151684, questID = 55399}, -- Zhu-Gon the Sour       
+[152007]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152007"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152007, questID = 55369}, -- Zhu-Gon the Sour       
+[151933]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151933"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151933, questID = 55544}, -- Zhu-Gon the Sour       
+[151124]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151124"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151124, questID = 55207}, -- Zhu-Gon the Sour       
+[151672]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151672"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151672, questID = 55386}, -- Zhu-Gon the Sour       
+[153000]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153000"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153000, questID = 55386}, -- Zhu-Gon the Sour       
+[151627]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151627"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151627, questID = 55859}, -- Zhu-Gon the Sour       
+[151702]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151702"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151702, questID = 55405}, -- Zhu-Gon the Sour       
+[150575]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150575"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150575, questID = 55368}, -- Zhu-Gon the Sour       
+[152182]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152182"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152182, questID = 55811}, -- Zhu-Gon the Sour       
+[150937]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150937"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150937, questID = 55545}, -- Zhu-Gon the Sour       
+[153226]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153226"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153226, questID = 55854}, -- Zhu-Gon the Sour       
+[152113]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152113"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152113, questID = 55858}, -- Zhu-Gon the Sour       
+[154225]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154225"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154225, questID = 56182}, -- Zhu-Gon the Sour       
+[151623]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151623"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151623, questID = 55364}, -- Zhu-Gon the Sour       
+[151625]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151625"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151625, questID = 55364}, -- Zhu-Gon the Sour       
+[151940]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151940"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151940, questID = 55538}, -- Zhu-Gon the Sour       
+[150342]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150342"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150342, questID = 55814}, -- Zhu-Gon the Sour       
+[151308]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151308"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151308, questID = 55539}, -- Zhu-Gon the Sour       
+[155583]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["155583"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 155583, questID = 56737}, -- Zhu-Gon the Sour       
+[151934]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151934"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151934, questID = 55512}, -- Zhu-Gon the Sour       
+[150394]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150394"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150394, questID = 55546}, -- Zhu-Gon the Sour       
+[153200]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153200"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153200, questID = 55857}, -- Zhu-Gon the Sour       
+[152001]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152001"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152001, questID = 55537}, -- Zhu-Gon the Sour       
+[154739]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154739"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154739, questID = 56368}, -- Zhu-Gon the Sour       
+[149847]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["149847"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 149847, questID = 56368}, -- Zhu-Gon the Sour       
+[152569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152569, questID = 55812}, -- Zhu-Gon the Sour       
+[152570]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152570"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152570, questID = 55812}, -- Zhu-Gon the Sour       
+[151569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151569, questID = 55514}, -- Zhu-Gon the Sour       
+[154153]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154153"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154153, questID = 56207}, -- Zhu-Gon the Sour       
+[151202]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151202"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151202, questID = 55513}, -- Zhu-Gon the Sour       
+[151884]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151884"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151884, questID = 55367}, -- Zhu-Gon the Sour       
+[153228]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153228"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153228, questID = 55852}, -- Zhu-Gon the Sour   
 --[151660] = { lastAnnounce = 0, killTime = -1, npcName = "Scrapbown Trashtosser"            , minSpawn = 2,    maxSpawn = 5,    coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Foreboding Flame
 --[152960] = { lastAnnounce = 0, killTime = -1, npcName = "Scrapbone Grunter"            , minSpawn = 2,    maxSpawn = 5,    coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Foreboding Flame
 }
@@ -407,7 +407,18 @@ local function RefreshText()
                 rareFrame.timeFrame.text[newIndex]:SetFont("Fonts\\ARIALN.TTF", 12)
                 if (mobs[mobIDs[rareIndex]].killTime ~= nil) then
                   if (mobs[mobIDs[rareIndex]].killTime == -1) then
-                    rareFrame.timeFrame.text[newIndex]:SetText("---")
+                    local quest = IsQuestFlaggedCompleted(mobs[mobIDs[rareIndex]].questID);
+                    --print (quest);
+                    if quest == true then
+                      local quest_text = "\124cFFFF0000Completed\124r"
+                      rareFrame.timeFrame.text[newIndex]:SetText(quest_text)
+                    else
+                      local quest_text = "\124cFF00FF00Not Completed\124r"
+                      rareFrame.timeFrame.text[newIndex]:SetText(quest_text)
+                    end
+                    --print(quest_text)
+                    --rareFrame.timeFrame.text[newIndex]:SetText(quest_text)
+
                   elseif ((time() - mobs[mobIDs[rareIndex]].killTime) <= 60 ) then
                     rareFrame.timeFrame.text[newIndex]:SetText(L["Dead"])
                   else
@@ -461,7 +472,7 @@ end
 
 -- Sends a message to either /1 or our syncing channel
 local function SendGeneralMessage(msg, isSync)
-local index = GetChannelName("test") -- Find General Channel for user
+local index = GetChannelName("1") -- Find General Channel for user
   if (msg ~= nil) then
     if (isSync == false) then
       -- For some reason the SendChatMessage does not like the output from SecondsToTime
