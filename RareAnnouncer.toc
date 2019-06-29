@@ -1,0 +1,34 @@
+﻿## Interface: 60000
+## Title: RareAnnouncer
+## Version: r14
+## RareAnnouncer Author: TonDef
+## Branch Author: TonDef
+## Notes: Sends spawn/kill events to general channel (optional) and background synchronization channel to call other players to help kill rare NPCs on the Timeless Isle. If you can help with localization please visit our CurseForge page and click the Localization tab.
+## URL: http://wow.curseforge.com/addons/RareAnnouncer.html
+## URL: http://www.curse.com/addons/wow/RareAnnouncer
+## SavedVariables: RAREAN
+## DefaultState: enabled
+## X-Category: Chat, Achievements, Quests
+## X-Date: 2014-11-17T16:45:06Z
+## X-Localizations: enUS, enGB, esES. zhTW, deDE, ruRU, itIT, ptBR, zhCN, koKR, esMX. frFR
+## X-CompatibleLocales: enUS, enGB, esES, zhTW, deDE, ruRU, itIT, ptBR, zhCN, koKR, esMX. frFR
+## X-Curse-Packaged-Version: r14
+## X-Curse-Project-Name: RareAnnouncer
+## X-Curse-Project-ID: rareannouncer
+## X-Curse-Repository-ID: wow/rareannouncer/mainline
+
+AddonCore.lua
+
+Localization.enUS.lua
+Localization.esES.lua
+Localization.zhTW.lua
+Localization.deDE.lua
+Localization.ruRU.lua
+Localization.itIT.lua
+Localization.ptBR.lua
+Localization.zhCN.lua
+Localization.koKR.lua
+Localization.esMX.lua
+Localization.frFR.lua
+
+RareAnnouncer.lua

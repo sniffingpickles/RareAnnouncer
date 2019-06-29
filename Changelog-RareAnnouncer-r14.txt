@@ -1,0 +1,114 @@
+2014-11-17  TonDef  <TonDef>
+
+[6c6ce34713e2] [tip]
+* Localization.deDE.lua, Localization.esMX.lua, Localization.frFR.lua, Localization.itIT.lua, Localization.koKR.lua, Localization.ptBR.lua, Localization.zhCN.lua, RareAnnouncer.lua, RareAnnouncer.toc:
+
+- Updated toc
+- Fixed finding 'General' chat if not set to channel #1
+- Repaired repository links
+
+
+2013-10-23  Dragonsangel  <Dragonsangel@Joan.home.gateway>
+
+[bd0eb013848e]
+* .hgtags:
+
+Added tag 5.4.1.6 for changeset a9eea80688f6
+
+
+[a9eea80688f6] [5.4.1.6]
+* RareAnnouncer.lua:
+
+Sorted the issue of the screen/wow freezing when you want to move the tracking window
+  (issues no: 5, 8)
+Corrected the bug where the menu options are not propperly loaded
+  (issues no: 13, 20)
+Implemented code to handle spawn timers of more than 2 hours and adjusted some rare's spawn timers
+  (issues no: 18)
+Fixed an issue where the frame would stop updating after it was moved.
+  (issues no: 7)
+
+
+2013-10-07  Dragonsangel  <Dragonsangel@Joan.home.gateway>
+
+[a93aa26d8750]
+* .hgtags:
+
+Added tag Beta 5.4.1.6 for changeset c9d56ebc2040
+
+
+[c9d56ebc2040] [Beta 5.4.1.6]
+* Localization.enUS.lua, RareAnnouncer.lua, RareAnnouncer.toc:
+
+Possible fix for the death announce and request spam
+Implemented code that should solve the freeze on move issue
+Minor fix in English translation
+
+
+2013-10-02  Dragonsangel  <Dragonsangel@Joan.home.gateway>
+
+[a6293e1ebc08]
+* .hgtags:
+
+Added tag 5.4.1.5 for changeset 4dbf00a0936d
+
+
+[4dbf00a0936d] [5.4.1.5]
+* Localization.deDE.lua, Localization.enUS.lua, Localization.esES.lua, Localization.ruRU.lua, Localization.zhTW.lua, RareAnnouncer.lua:
+
+Corrected bugs with localization
+Corrected a bug with the "Name" text not showing
+Removed some redundant code
+
+
+[554e92bec419]
+* .hgtags:
+
+Added tag 5.4.1.4 for changeset cc58bcf44df1
+
+
+[cc58bcf44df1] [5.4.1.4]
+* Merged Russian and Spanish localizations into branch
+Updated ToC
+Corrected one issue with kill time colouring
+
+
+[8b8006a615ae]
+* Localization.esES.lua, Localization.ruRU.lua, RareAnnouncer.toc:
+
+Merged with Spanish and Russian translations
+Updated TOC file
+
+
+2013-10-01  Dragonsangel  <Dragonsangel@Joan.home.gateway>
+
+[317398e77efc]
+* .hgtags:
+
+Added tag Beta 5.4.1.4 for changeset 871606ace29e
+
+
+[871606ace29e] [Beta 5.4.1.4]
+* Branch creation for Beta/Release taggin.
+Only code that is in a state to be released to Beta or Release version should be merged into this branch
+
+
+[ef3285c2335d]
+* Localization.deDE.lua, Localization.enUS.lua, Localization.esES.lua, Localization.zhTW.lua, RareAnnouncer.lua, RareAnnouncer.toc:
+
+Updated the NPC ID of Cranegnasher in the main LUA and all translated LUA's
+Added a centralized function for determining the text colour for the time
+Strengthened the RC message handling incase of errors
+Propperly named the RC functions (Instead of RS)
+
+
+[7ba14b4c97ef]
+* AddonCore.lua, Localization.deDE.lua, Localization.enUS.lua, Localization.esES.lua, Localization.zhTW.lua, RareAnnouncer.lua, RareAnnouncer.toc:
+
+Initial commit of all the files
+
+
+[40c26a0f5488]
+* Branch creation for Dragonsangel
+
+
