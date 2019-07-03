@@ -51,87 +51,168 @@ local OptionsDefault = {
 local L = RareAnnouncerLocalization
 
 local mobIDs = {  
-  153205,
-154701,
-151684,
-152007,
-151933,
-151124,
-151672,
-153000,
-151627,
-151702,
-150575,
-152182,
-150937,
-153226,
-152113,
-154225,
-151623,
-151625,
-151940,
-150342,
-151308,
-155583,
-151934,
-150394,
-153200,
-152001,
-154739,
-149847,
-152569,
-152570,
-151569,
-154153,
-151202,
-151884,
-153228,  --- Testing
-151660,
-152960, -- Foreboding Flame
+-- Comment your shit dude lol
+-- Mechagon
+  153205, -- Gemicide
+154701, -- Gorged Gear-Cruncher
+151684,	-- Jawbreaker
+152007, -- Killsaw
+151933, -- Malfunctioning Beastbot
+151124, -- Mechagonian Nullifier
+151672, -- Mecharantula
+153000, -- Sparkqueen P'emp
+151627, -- Mr. Fixthis
+151702, -- Paol Pondwader
+150575, -- Rumblerocks
+152182, -- Rustfeather
+150937, -- Seaspit
+153226, -- Steel Singer Freza
+152113, -- The Kleptoboss
+154225, -- The Rusty Prince
+151623, -- The Scrap King
+151625, -- The Scrap King 2: Electric Boogaloo
+151940, -- Uncle T'Rogg
+150342, -- Earthbreaker Gulroc
+151308, -- Boggac Skullbash
+155583, -- Scrapclaw
+151934, -- Arachnoid Harvester
+150394, -- Armored Vaultbot
+153200, -- Boilburn
+152001, -- Bonepicker
+154739, -- Caustic Mechaslime
+149847, -- Crazed Trogg (Orange)
+152569, -- Crazed Trogg (Green)
+152570, -- Crazed Trogg (Blue)
+151569, -- Deepwater Maw
+154153, -- Enforcer KX-T57
+151202, -- Foul Manifestation
+151884, -- Fungarian Furor
+153228, -- Gear Checker Cogstar
+155060, -- The Doppel Gang
+151296, -- OOX-Avenger/MG
+153206, -- Ol' Big Tusk
+152764, -- Oxidized Leachbeast
+-- Nazjatar
+152415, -- Alga the Eyeless
+152416, -- Allseer Oma'kil
+152794, -- Amethyst Spireshell
+152566, -- Anemonar
+152361, -- Banescale the Packfather
+152712, -- Blindlight
+152464, -- Caverndark Terror
+152556, -- Chasm-Haunter
+152756, -- Daggertooth Terror
+152291, -- Deepglider
+152414, -- Elder Unu
+152555, -- Elderspawn Nalaada
+152553, -- Garnetscale
+152448, -- Iridescent Glimmershell
+152567, -- Kelpwillow
+152323, -- King Gakula
+144644, -- Mirecrawler
+152465, -- Needlespine
+152397, -- Oronu
+152681, -- Prince Typhonus
+152682, -- Prince Vortran
+150583, -- Rockweed Shambler
+151870, -- Sandcastle
+152795, -- Sandclaw Stoneshell
+152548, -- Scale Matriarch Gratinax
+152545, -- Scale Matriarch Vynara
+152542, -- Scale Matriarch Zodia
+152552, -- Shassera
+153658, -- Shiz'narasz the Consumer (wtf kind of name is that blizzard)
+152359, -- Siltstalker the Packmother
+152290, -- Soundless
+153898, -- Tidelord Aquatus
+153928, -- Tidelord Dispersius
+154148, -- Tidemistress Leth'sindra(gosa)
+152360, -- Toxigore the Alpha
+152568, -- Urduu
+151719 -- Voice in the Deeps
 }
 
 local mobs = {
   -- npc_id = {message sent, died time, name, min spawn time, max spawn time, coordsX, coordsY, lastRequest}
-  -- Timeless Isle (map 951)
   -- Many of the spawn timers are guesses, will need to refine when data is available
-  -- [73174] = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["73174"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0,    coordsY = 0,    lastRequest = 0 }, -- Archiereus of Flame
-[153205]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153205"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153205, questID = 55855}, -- Zhu-Gon the Sour       
-[154701]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154701"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154701, questID = 56367}, -- Zhu-Gon the Sour       
-[151684]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151684"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151684, questID = 55399}, -- Zhu-Gon the Sour       
-[152007]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152007"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152007, questID = 55369}, -- Zhu-Gon the Sour       
-[151933]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151933"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151933, questID = 55544}, -- Zhu-Gon the Sour       
-[151124]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151124"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151124, questID = 55207}, -- Zhu-Gon the Sour       
-[151672]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151672"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151672, questID = 55386}, -- Zhu-Gon the Sour       
-[153000]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153000"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153000, questID = 55386}, -- Zhu-Gon the Sour       
-[151627]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151627"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151627, questID = 55859}, -- Zhu-Gon the Sour       
-[151702]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151702"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151702, questID = 55405}, -- Zhu-Gon the Sour       
-[150575]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150575"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150575, questID = 55368}, -- Zhu-Gon the Sour       
-[152182]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152182"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152182, questID = 55811}, -- Zhu-Gon the Sour       
-[150937]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150937"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150937, questID = 55545}, -- Zhu-Gon the Sour       
-[153226]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153226"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153226, questID = 55854}, -- Zhu-Gon the Sour       
-[152113]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152113"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152113, questID = 55858}, -- Zhu-Gon the Sour       
-[154225]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154225"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154225, questID = 56182}, -- Zhu-Gon the Sour       
-[151623]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151623"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151623, questID = 55364}, -- Zhu-Gon the Sour       
-[151625]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151625"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151625, questID = 55364}, -- Zhu-Gon the Sour       
-[151940]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151940"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151940, questID = 55538}, -- Zhu-Gon the Sour       
-[150342]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150342"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150342, questID = 55814}, -- Zhu-Gon the Sour       
-[151308]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151308"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151308, questID = 55539}, -- Zhu-Gon the Sour       
-[155583]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["155583"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 155583, questID = 56737}, -- Zhu-Gon the Sour       
-[151934]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151934"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151934, questID = 55512}, -- Zhu-Gon the Sour       
-[150394]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150394"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150394, questID = 55546}, -- Zhu-Gon the Sour       
-[153200]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153200"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153200, questID = 55857}, -- Zhu-Gon the Sour       
-[152001]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152001"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152001, questID = 55537}, -- Zhu-Gon the Sour       
-[154739]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154739"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154739, questID = 56368}, -- Zhu-Gon the Sour       
-[149847]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["149847"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 149847, questID = 56368}, -- Zhu-Gon the Sour       
-[152569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152569, questID = 55812}, -- Zhu-Gon the Sour       
-[152570]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152570"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152570, questID = 55812}, -- Zhu-Gon the Sour       
-[151569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151569, questID = 55514}, -- Zhu-Gon the Sour       
-[154153]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154153"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154153, questID = 56207}, -- Zhu-Gon the Sour       
-[151202]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151202"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151202, questID = 55513}, -- Zhu-Gon the Sour       
-[151884]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151884"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151884, questID = 55367}, -- Zhu-Gon the Sour       
-[153228]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153228"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153228, questID = 55852}, -- Zhu-Gon the Sour   
---[151660] = { lastAnnounce = 0, killTime = -1, npcName = "Scrapbown Trashtosser"            , minSpawn = 2,    maxSpawn = 5,    coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Foreboding Flame
---[152960] = { lastAnnounce = 0, killTime = -1, npcName = "Scrapbone Grunter"            , minSpawn = 2,    maxSpawn = 5,    coordsX = 0, coordsY = 0, lastRequest = 0 }, -- Foreboding Flame
+  -- Mechagon -- 
+[153205]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153205"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153205, questID = 55855}, -- Gemicide
+[154701]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154701"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154701, questID = 56367}, -- Gorged Gear-Cruncher
+[151684]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151684"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151684, questID = 55399}, -- Jawbreaker      
+[152007]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152007"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152007, questID = 55369}, -- Killsaw
+[151933]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151933"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151933, questID = 55544}, -- Malfunctioning Beastbot
+[151124]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151124"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151124, questID = 55207}, -- Mechagonian Nullifier
+[151672]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151672"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151672, questID = 55386}, -- Mecharantula
+[153000]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153000"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153000, questID = 55810}, -- Sparkqueen P'emp
+[151627]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151627"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151627, questID = 55859}, -- Mr. Fixthis
+[151702]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151702"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151702, questID = 55405}, -- Paol Pondwader
+[150575]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150575"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150575, questID = 55368}, -- Rumblerocks
+[152182]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152182"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152182, questID = 55811}, -- Rustfeather
+[150937]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150937"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150937, questID = 55545}, -- Seaspit
+[153226]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153226"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153226, questID = 55854}, -- Steel Singer Freza
+[152113]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152113"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152113, questID = 55858}, -- The Kleptoboss
+[154225]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154225"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154225, questID = 56182}, -- The Rusty Prince
+[151623]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151623"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151623, questID = 55364}, -- The Scrap King
+[151625]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151625"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151625, questID = 55364}, -- The Scrap King
+[151940]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151940"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151940, questID = 55538}, -- Uncle T'Rogg
+[150342]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150342"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150342, questID = 55814}, -- Earthbreaker Gulroc
+[151308]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151308"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151308, questID = 55539}, -- Boggac Skullbash
+[155583]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["155583"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 155583, questID = 56737}, -- Scrapclaw
+[151934]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151934"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151934, questID = 55512}, -- Arachnoid Harvester
+[150394]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150394"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150394, questID = 55546}, -- Armored Vaultbot
+[153200]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153200"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153200, questID = 55857}, -- Boilburn
+[152001]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152001"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152001, questID = 55537}, -- Bonepicker
+[154739]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154739"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154739, questID = 56368}, -- Caustic Mechaslime
+[149847]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["149847"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 149847, questID = 55812}, -- Crazed Trogg (Orange)
+[152569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152569, questID = 55812}, -- Crazed Trogg (Green)
+[152570]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152570"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152570, questID = 55812}, -- Crazed Trogg (Blue)
+[151569]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151569"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151569, questID = 55514}, -- Deepwater Maw
+[154153]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154153"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154153, questID = 56207}, -- Enforcer KX-T57
+[151202]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151202"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151202, questID = 55513}, -- Foul Manifestation
+[151884]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151884"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151884, questID = 55367}, -- Fungarian Furor
+[153228]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153228"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153228, questID = 55852}, -- Gear Checker Cogstar
+[155060]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["155060"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 155060, questID = 56419}, -- The Doppel Gang
+[151296]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151296"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151296, questID = 55515}, -- OOX-Avenger/MG
+[153206]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153206"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153206, questID = 55853}, -- Ol' Big Tusk
+[152764]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152764"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152764, questID = 55856}, -- Oxidized Leachbeast
+	-- Nazjatar --
+[152415]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152415"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152415, questID = 0}, -- Alga the Eyeless
+[152416]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152416"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152416, questID = 0}, -- Allseer Oma'kill
+[152794]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152794"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152794, questID = 0}, -- Amethyst Spireshell
+[152566]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152566"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152566, questID = 0}, -- Anemonar
+[152361]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152361"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152361, questID = 0}, -- Banescale the Packfather
+[152712]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152712"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152712, questID = 0}, -- Blindlight
+[152464]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152464"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152464, questID = 0}, -- Caverndark Terror
+[152556]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152556"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152556, questID = 0}, -- Chasm-Hunter
+[152756]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152756"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152756, questID = 0}, -- Daggertooth Terror
+[152291]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152291"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152291, questID = 0}, -- Deepglider
+[152414]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152414"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152414, questID = 0}, -- Elder Unu
+[152555]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152555"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152555, questID = 0}, -- Elderspawn Nalaada
+[152553]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152553"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152553, questID = 0}, -- Garnetscale
+[152448]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152448"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152448, questID = 0}, -- Iridescent Glimmershell
+[152567]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152567"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152567, questID = 0}, -- Kelpwillow
+[152323]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152323"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152323, questID = 0}, -- King Gakula
+[144644]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["144644"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 144644, questID = 0}, -- Mirecrawler
+[152465]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152465"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152465, questID = 0}, -- Needlespine
+[152397]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152397"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152397, questID = 0}, -- Oronu
+[152681]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152681"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152681, questID = 0}, -- Prince Typhonus
+[152682]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152682"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152682, questID = 0}, -- Prince Vortran
+[150583]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["150583"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 150583, questID = 0}, -- Rockweed Shambler
+[151870]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151870"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151870, questID = 0}, -- Sandcastle
+[152795]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152795"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152795, questID = 0}, -- Sandclaw Stoneshell
+[152548]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152548"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152548, questID = 0}, -- Scale Matriarch Gratinax
+[152545]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152545"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152545, questID = 0}, -- Scale Matriarch Vynara
+[152542]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152542"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152542, questID = 0}, -- Scale Matriarch Zodia
+[152552]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152552"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152552, questID = 0}, -- Shassera
+[153658]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153658"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153658, questID = 0}, -- Shiz'naraszasazafadfaxzdafasda the Consumer
+[152359]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152359"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152359, questID = 0}, -- Siltstalker the Packmother
+[152290]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152290"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152290, questID = 0}, -- Soundless
+[153898]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153898"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153898, questID = 0}, -- Tidelord Aquatus
+[153928]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["153928"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 153928, questID = 0}, -- Tidelord Dispersius
+[154148]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["154148"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 154148, questID = 0}, -- Tidemistress Leth'sindra
+[152360]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152360"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152360, questID = 0}, -- Toxigore the Alpha
+[152568]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["152568"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 152568, questID = 0}, -- Urduu
+[151719]   = { lastAnnounce = 0, killTime = -1, killAnnounced = 0, npcName = (L["151719"]), minSpawn = 1800, maxSpawn = 3600, coordsX = 0, coordsY = 0, lastRequest = 0, id = 151719, questID = 0} -- Voice in the Deeps
 }
 
 -- local text_timer, text_throttle = 0, 10
@@ -526,7 +607,7 @@ local function SendTargetMessage(rareID)
         local x, y = C_Map.GetPlayerMapPosition(map,"player"):GetXY()
         local health = math.floor(UnitHealth("target")*100/UnitHealthMax("target"))
         
-        local targetMessage = "RareAnnouncer: ".. mobs[rareID].npcName .." (".. health .."%)"..(L["Coordinates"])..math.floor(x*100)..", "..math.floor(y*100)
+        local targetMessage = "RA: ".. mobs[rareID].npcName .." [".. health .."%]".." @ ("..math.floor(x*100)..","..math.floor(y*100)..")"
         SendGeneralMessage(targetMessage, false)
         mobs[rareID].lastAnnounce = time()
         targetMessage = "[".. syncChanNamePrefix .. "]" ..GetRareIdString(rareID) .. "_target_" .. mobs[rareID].lastAnnounce
